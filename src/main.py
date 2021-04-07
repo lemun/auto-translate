@@ -25,7 +25,7 @@ class Main:
 
             t = Translator(service_urls=['translate.googleapis.com'])
             result = t.translate(txt, src='en', dest='he')
-            print(result.text)
+            print('Translation: ' + result.text)
 
         elif choosen_language == '2':
             instruction = 'Word / Sentence: '
@@ -33,7 +33,7 @@ class Main:
 
             t = Translator(service_urls=['translate.googleapis.com'])
             result = t.translate(txt, src='he', dest='en')
-            print(result.text)
+            print('Translation: ' + result.text)
             
         elif choosen_language != '1':
             print('Exit()')
